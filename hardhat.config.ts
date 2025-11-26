@@ -1,10 +1,11 @@
-import hardhatToolboxMochaEthersPlugin from "@nomicfoundation/hardhat-toolbox-mocha-ethers";
+// import hardhatToolboxMochaEthersPlugin from "@nomicfoundation/hardhat-toolbox-mocha-ethers";
 import hardhatToolboxViemPlugin from "@nomicfoundation/hardhat-toolbox-viem";
 
 import { configVariable, defineConfig } from "hardhat/config";
 
 export default defineConfig({
-  plugins: [hardhatToolboxMochaEthersPlugin, hardhatToolboxViemPlugin],
+  // plugins: [hardhatToolboxMochaEthersPlugin], // 使用viem时注释当前行，并注释Counter.ts中所有代码
+  plugins: [hardhatToolboxViemPlugin],
   solidity: {
     profiles: {
       default: {
